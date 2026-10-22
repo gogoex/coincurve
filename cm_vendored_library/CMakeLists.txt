@@ -8,17 +8,17 @@ if (PROJECT_IGNORE_SYSTEM_LIB OR NOT VENDORED_AS_SYSTEM_LIB_FOUND)
 
     # Set ULR based upon CMake definitions
     if (NOT VENDORED_UPSTREAM_URL)
-        set(VENDORED_UPSTREAM_URL "https://github.com/basicswap/secp256k1/archive")
+        set(VENDORED_UPSTREAM_URL "https://github.com/gogoex/secp256k1/archive")
     endif()
 
     if (NOT VENDORED_UPSTREAM_REF)
        message(STATUS "VENDORED_UPSTREAM_REF not set, using default value.")
-       set(VENDORED_UPSTREAM_REF "98679b41ab5f03bcc87a0849405de7dc34be04c4")
+       set(VENDORED_UPSTREAM_REF "d99d78cf551cbb71215b02f32df1868341e1182e")
     endif()
 
     if (NOT VENDORED_UPSTREAM_SHA)
         message(STATUS "VENDORED_UPSTREAM_SHA not set, using default value.")
-        set(VENDORED_UPSTREAM_SHA "f4a850fe414f4a1c8f92f44a5c588cb3264b67a68afb1943e9d31d1ebd24d6d3")
+        set(VENDORED_UPSTREAM_SHA "1afcf3732795b498eb38f28600b4793378d96fc19947fd691761eb7c4a1c38c9")
     endif()
 
     if (NOT CMAKE_BUILD_TYPE)
